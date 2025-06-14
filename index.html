@@ -77,8 +77,7 @@
       <!-- hero section -->
       <div class="container text-center section-hero">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12 text-start mb-4 col--1">
-            <!-- <h1 class="primary-heading"> < Hi iam<span class=" highlight"> Athul </span>/></h1><br> -->
+          <div class="col-lg-6 col-md-12 text-start mb-4 col--1 hero-text">
             <span class="span--text"
               >< Hello world <span class="highlight">!</span> <br />
               I am
@@ -88,8 +87,10 @@
               <label class="highlight">Mern stack</label>
               <span class="span--text"> developer /> </span>
             </p>
-            <p>//Writing code.Solving the problems.Building the web</p>
-            <p>//Turning ideas into fast, scalable, and responsive web apps.</p>
+            <p class="hero-text">
+              Writing code.Solving the problems.Building the web
+            </p>
+            <p>Turning ideas into fast, scalable, and responsive web apps.</p>
             <!-- <p> MongoDB | Express.Js | React.Js | Node.Js</p>-->
             <span class="badge">MongoDB</span>
             <span class="badge">Express.js</span>
@@ -145,8 +146,8 @@
     <!-- About me section-end -->
     <!-- Skills section -->
     <section class="container-sm skills-section">
-      <h2 class="h2 text-center secondary-heading">Skills</h2>
-      <div class="row text-center mt-4 g-4">
+      <h2 class="h2 text-center secondary-heading skills-title">Skills</h2>
+      <div class="row text-center mt-4 g-4 container">
         <div class="col-6 col-md-3">
           <img
             src="images/js.png"
@@ -169,15 +170,10 @@
             class="img-fluid skill-icon"
             alt="React.js"
           />
-          
         </div>
 
         <div class="col-6 col-md-3">
-          <img
-            src="MongoDB.svg"
-            class="img-fluid skill-icon"
-            alt="MongoDB"
-          />
+          <img src="MongoDB.svg" class="img-fluid skill-icon" alt="MongoDB" />
         </div>
 
         <div class="col-6 col-md-3">
@@ -202,7 +198,6 @@
             class="img-fluid skill-icon"
             alt="Git"
           />
-         
         </div>
 
         <div class="col-6 col-md-3">
@@ -214,5 +209,100 @@
         </div>
       </div>
     </section>
+    <!-- Skills section end  -->
+    <!-- ////////////////////////////////////// -->
+    <section class="container my-5 projects-section">
+      <h2 class="h2 text-center secondary-heading skills-title">Projects</h2>
+      <section class="container my-5 section--projects">
+        <div class="mb-5 text-center project-image-div">
+          <img
+            src="images/Screenshot 2025-06-14 180626.png"
+            alt="Project 1"
+            class="img-fluid project-img"
+            style="max-width: 50vw"
+          />
+          <h4 class="mt-3">Far away project</h4>
+          <a href="https://travel-list-lac-chi.vercel.app/" target="_blank"
+            >Live Demo</a
+          >
+        </div>
+
+        <!-- Project 2 -->
+        <div class="mb-5 text-center project-image-div">
+          <img
+            src="images/Screenshot 2025-06-14 180600.png"
+            alt="Project 2"
+            class="img-fluid project-img"
+            style="max-width: 50vw"
+          />
+          <h4 class="mt-3">Guess My Number</h4>
+          <a
+            href="https://guess-my-number-game-peach.vercel.app/"
+            target="_blank"
+            >Live Demo</a
+          >
+        </div>
+
+        <!-- Project 3 -->
+        <div class="mb-5 text-center project-image-div">
+          <img
+            src="images/Screenshot 2025-06-14 180538.png"
+            alt="Project 3"
+            class="img-fluid project-img"
+            style="max-width: 50vw"
+          />
+          <h4 class="mt-3">Omnifood website</h4>
+          <a href="https://live-demo-link3.com" target="_blank">Live Demo</a>
+        </div>
+        <div class="explore-button">
+          <a href="https://github.com/Athuldevan"
+            ><button class="btn btn-primary btn-explore">View More</button></a
+          >
+        </div>
+      </section>
+    </section>
+    <!-- ///////////////////////////////////////////////////////// -->
+
+    <!-- contact us section -->
+    <section class="container contact-section">
+      <h2 class="h2 text-center secondary-heading contact-me">contact Me</h2>
+      <form class="form">
+        <div class="mb-3">
+          <label for="" class="form-label">Name </label>
+          <input
+            type="text"
+            class="form-control"
+            id=""
+            placeholder="Enter your name "
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="submit-btn"
+          style="background-color: #49108b"
+        >
+          Send
+        </button>
+      </form>
+    </section>
+    <hr />
+    <!-- footer section -->
+    <footer>
+      <div class="container footer-container">
+        <li>Instagram</li>
+        <li>Leetcode</li>
+        <li>Twitter</li>
+        <li>github</li>
+      </div>
+    </footer>
   </body>
 </html>

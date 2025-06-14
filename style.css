@@ -1,41 +1,14 @@
-/*
-COLORS:
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
-
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
-
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
-
-$color-white: #fff;
-$color-black: #000;
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128;
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-#F3F8FF
+/* #F3F8FF
 #E26EE5
 #7E30E1
-#49108B
-*/
+#49108B */
+
 /* media query  */
 @media (max-width: 768px) {
   .section-hero {
     padding: 48px 16px;
     text-align: center;
+    margin-top: 10px;
   }
 
   .highlight {
@@ -64,6 +37,19 @@ $color-black: #000;
 
   .skill-img {
     max-width: 80px;
+  }
+  .hero-text {
+    padding: 15px;
+  }
+
+  .hero-text,
+  .span--text {
+    text-align: center;
+  }
+
+  .about-me-text {
+    margin-top: 22px;
+    font-size: 32px;
   }
 }
 root {
@@ -127,6 +113,18 @@ body {
   font-size: 0.85rem;
   color: #333;
 }
+
+css Copy code .hero-text {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-text {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #777;
+  margin-bottom: 10px;
+}
 .highlight {
   color: #49108b;
   font-size: 32px;
@@ -139,8 +137,6 @@ body {
   font-weight: 400;
 }
 
-.hero--label {
-}
 /* section hero animation  */
 @keyframes movesInLeft {
   0% {
@@ -200,7 +196,8 @@ body {
 .about-me-text {
   margin-top: 64px;
   line-height: 34px;
-  color: #555;
+  color: #777;
+  font-size: 24px;
 }
 
 /*  */
@@ -242,15 +239,134 @@ body {
 }
 /* ////////////////////////////////////////////////////////// */
 .skills-section {
-  padding: ;
-
+  padding: 96px;
+  margin-top: 48px;
 }
 .skill-icon {
   max-width: 80px;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
 .skill-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) translateY(-3px);
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/* /////////////////////////////////////////////////////// */
+.projects-section {
+  padding: 96px;
+  margin-top: 48px;
+  animation: opacityAnimation 2s ease-in;
+  font-size: 22px;
 }
 
+h4 {
+  font-size: 22px;
+  color: #777;
+}
+
+.project-image-div {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(126, 48, 225, 0.1);
+}
+.project-img {
+  transition: all 0.2s ease-in;
+}
+.project-img:hover {
+  transform: scale(1.04);
+}
+
+.btn-explore {
+  display: flex;
+  justify-content: center;
+}
+.explore-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore-button > a {
+  text-decoration: none;
+}
+
+.btn-explore {
+  background-color: #7e30e1;
+  color: #fff;
+  font-weight: 400;
+}
+
+.btn-explore:hover {
+  background-color: #49108b;
+  box-shadow: 0 2px 12px rgba(126, 48, 225, 0.3);
+}
+
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* //////////////////////////////////////////////// */
+.contact-section {
+  padding: 96px;
+  margin-top: 64px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #7e30e1;
+}
+
+.contact-me {
+  margin-bottom: 29px;
+  background-color: #fff;
+  color: #49108b;
+}
+form {
+  padding: 10px;
+  color: #fff;
+}
+input[type="text"] {
+  border: 1px solid #49108b;
+  width: 80%;
+  color: #fff;
+}
+input[type="text"]:focus {
+  box-shadow: 0 2px 22px rgba(126, 48, 225, 0.3);
+}
+
+input[type="email"] {
+  border: 1px solid #49108b;
+  width: 80%;
+  color: #49108b;
+  color: #fff;
+}
+
+input[type="email"]:focus {
+  box-shadow: 0 2px 22px rgba(126, 48, 225, 0.3);
+}
+.submit-btn {
+  background-color: #49108b;
+  padding: 9px 18px;
+  color: #fff;
+  transition: all 0.5s ease-in;
+  border: none;
+  border-radius: 10px;
+}
+/* /////////////////////////////// */
+footer {
+  width: 100vw;
+  background-color: #333;
+  height: 35vh;
+  color:#fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  list-style-type: none;
+}
+.footer-container>li {
+margin-top: 50px;
+}
