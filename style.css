@@ -49,7 +49,7 @@ body {
 }
 
 .container {
-  height: 80vh;
+  padding-top: 40px 0px 40px 0;
   color: var(--secondary-color);
 }
 .nav-item a {
@@ -149,7 +149,7 @@ body {
 /* //////////////////////////////// */
 .section--about-me {
   padding: 96px;
-  margin-top: 90px;
+  margin-top: 48px;
   animation: fadeInUp 2s ease-in forwards;
 }
 .secondary-heading {
@@ -207,3 +207,32 @@ body {
   background-color: #49108b;
   color: #ffff;
 }
+/* media query  */
+@media (max-width: 768px) {
+  .section-hero {
+    padding: 48px 16px;
+    text-align: center;
+  }
+
+  .highlight {
+    font-size: 24px;
+  }
+
+  .span--text {
+    font-size: 18px;
+  }
+
+  .hero--img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .secondary-heading {
+    font-size: 20px;
+  }
+  .hero-image-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
